@@ -30,6 +30,7 @@ public class TestRunner {
 
         final boolean TEST_All = true;
         final boolean TEST_Number = false;
+        final boolean TEST_RegEx = false;
 
 
         if (TEST_Number || TEST_All) {
@@ -46,6 +47,17 @@ public class TestRunner {
                 System.out.println("TestNumber.testSuccess_parseDouble Passed\n\n\n");
             } else {
                 System.out.println("*** TestNumber.testSuccess_parseDouble Failed ***\n\n\n");
+            }
+        }
+
+        if (TEST_RegEx || TEST_All) {
+
+            // test the Number Class
+            System.out.println("TestRegEx.testSuccess_RegEx\n");
+            if (TestRegEx.testSuccess_RegEx()) {
+                System.out.println("TestRegEx.testSuccess_RegEx Passed\n\n\n");
+            } else {
+                System.out.println("*** TestRegEx.testSuccess_RegEx Failed ***\n\n\n");
             }
         }
     }
